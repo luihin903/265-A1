@@ -33,8 +33,10 @@
               "content": "seek",
               "id": 1696146471959,
               "level": "default",
-              "done": false,
-              "start": 1696146471959
+              "done": true,
+              "start": 1696146471959,
+              "focus": false,
+              "end": 1696167689708
             }
           },
           {
@@ -44,8 +46,10 @@
               "content": "move",
               "id": 1696146521384,
               "level": "default",
-              "done": false,
-              "start": 1696146521384
+              "done": true,
+              "start": 1696146521384,
+              "focus": false,
+              "end": 1696167686891
             }
           }
         ],
@@ -101,8 +105,10 @@
               "content": "draw",
               "id": 1696146465341,
               "level": "default",
-              "done": false,
-              "start": 1696146465341
+              "done": true,
+              "start": 1696146465341,
+              "focus": false,
+              "end": 1696163477480
             }
           }
         ],
@@ -110,8 +116,10 @@
           "content": "forest",
           "id": 1696146460727,
           "level": "default",
-          "done": false,
-          "start": 1696146460727
+          "done": true,
+          "start": 1696146460727,
+          "focus": false,
+          "end": 1696163478385
         }
       },
       {
@@ -159,6 +167,6 @@
     "showEndTime": false,
     "simpleMode": false,
     "lang": "en",
-    "version": "1696146729095"
+    "version": "1696167689787"
   }
 }

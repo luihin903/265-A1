@@ -22,7 +22,7 @@ public class RabbitPanel extends JPanel implements ActionListener {
         size = initialSize;
 
         rabbit = new Rabbit(new PVector(size.width/2, size.height/2), new PVector(100, 100), 1);
-        Carrot.init(5);
+        Carrot.init(5, initialSize);
         Tree.init(5, initialSize);
 
         t = new Timer(33, this);
@@ -36,8 +36,11 @@ public class RabbitPanel extends JPanel implements ActionListener {
         setBackground(Color.GRAY);
 
         Graphics2D g2 = (Graphics2D) g;
+
+        Forest.draw(g2, size);
         rabbit.draw(g2);
         Tree.drawAll(g2);
+        Carrot.drawAll(g2);
     }
 
     @Override

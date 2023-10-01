@@ -27,9 +27,7 @@ public class Tree extends Object {
     public Tree(Dimension s) {
         super();
         
-        float newX = Util.random(0, s.width);
-        float newY = Util.random(0, s.height);
-        pos = new PVector(newX, newY);
+        pos = Util.random(s);
         dim = default_dim;
     }
 
@@ -41,6 +39,7 @@ public class Tree extends Object {
 
     @Override
     public void draw(Graphics2D g2) {
+
         AffineTransform af = g2.getTransform();
 
         g2.translate(pos.x, pos.y);
