@@ -67,10 +67,12 @@ public class Carrot extends Object {
         AffineTransform af = g2.getTransform();
 
         g2.translate(pos.x, pos.y);
-        g2.setColor(Color.ORANGE);
-        g2.fillOval((int) (-dim.x/4), 0, (int) (dim.x/2), (int) (dim.y/4));
+        g2.rotate(Math.toRadians(45));
+
+        g2.setColor(new Color(255, 127, 39));
+        g2.fillOval((int) (-dim.x/4), (int) (-dim.y/2), (int) (dim.x/2), (int) (dim.y/4));
         int[] xPoints = {(int) (-dim.x/4), 0, (int) (dim.x/4)};
-        int[] yPoints = {(int) (-dim.y/8*3), (int) (dim.y), (int) (-dim.y/8*3)};
+        int[] yPoints = {(int) (-dim.y/8*3), (int) (dim.y/2), (int) (-dim.y/8*3)};
         g2.fillPolygon(xPoints, yPoints, 3);
 
         g2.setTransform(af);

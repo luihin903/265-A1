@@ -71,8 +71,10 @@
               "content": "draw",
               "id": 1696146457801,
               "level": "default",
-              "done": false,
-              "start": 1696146457801
+              "done": true,
+              "start": 1696146457801,
+              "focus": false,
+              "end": 1696223943726
             }
           },
           {
@@ -148,6 +150,33 @@
           "focus": false,
           "end": 1696146729016
         }
+      },
+      {
+        "key": 1696223923877,
+        "children": [
+          {
+            "key": 1696223927656,
+            "children": [],
+            "todo": {
+              "content": "draw",
+              "id": 1696223927656,
+              "level": "default",
+              "done": true,
+              "start": 1696223927656,
+              "focus": false,
+              "end": 1696223930093
+            }
+          }
+        ],
+        "todo": {
+          "content": "flower",
+          "id": 1696223923877,
+          "level": "default",
+          "done": true,
+          "start": 1696223923877,
+          "focus": false,
+          "end": 1696223930630
+        }
       }
     ],
     "expandKeys": [
@@ -155,7 +184,8 @@
       1696146450274,
       1696146460727,
       1696146513114,
-      1696146525601
+      1696146525601,
+      1696223923877
     ],
     "schema": "https://github.com/Saber2pr/vsc-ext-todolist/blob/master/src/api/type.ts#L3",
     "add_mode": "bottom",
@@ -167,6 +197,6 @@
     "showEndTime": false,
     "simpleMode": false,
     "lang": "en",
-    "version": "1696167689787"
+    "version": "1696223943844"
   }
 }
