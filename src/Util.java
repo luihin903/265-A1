@@ -23,6 +23,12 @@ public abstract class Util {
         return new PVector(x, y);
     }
 
+    public static PVector random(Dimension s, int margin, PVector dim) {
+        float x = random(margin + dim.x/2, s.width - margin - dim.x/2);
+        float y = random(margin + dim.y/2, s.height - margin - dim.y/2);
+        return new PVector(x, y);
+    }
+
     public static Color random() {
         return new Color(random(0, 255), random(0, 255), random(0, 255));
     }

@@ -1,4 +1,5 @@
 import java.awt.Color;
+import java.awt.Dimension;
 import java.awt.Graphics2D;
 import java.awt.geom.AffineTransform;
 
@@ -6,7 +7,8 @@ import processing.core.PVector;
 
 public class Object {
     
-    protected PVector pos, dim;
+    protected PVector pos, dim, default_dim;
+    private final int margin = 20;
 
     public Object(PVector pos, PVector dim) {
         this.pos = pos;
@@ -14,6 +16,11 @@ public class Object {
     }
 
     public Object() {};
+
+    public Object(Dimension s) {
+        pos = Util.random(s, margin, dim);
+        dim = default_dim;
+    };
 
     protected void draw(Graphics2D g2) {};
 
