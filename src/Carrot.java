@@ -29,11 +29,7 @@ public class Carrot extends Object {
     }
 
     private Carrot(Dimension s) {
-        super();
-
-        pos = Util.random(s);
-        dim = default_dim;
-
+        super(s, default_dim);
         size ++;
     }
 
@@ -67,6 +63,7 @@ public class Carrot extends Object {
         AffineTransform af = g2.getTransform();
 
         g2.translate(pos.x, pos.y);
+        // g2.drawString("(" + Float.toString(pos.x) + ", " + Float.toString(pos.y) + ")", -50, -50);
         g2.rotate(Math.toRadians(45));
 
         g2.setColor(new Color(255, 127, 39));

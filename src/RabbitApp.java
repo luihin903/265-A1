@@ -2,10 +2,13 @@ import javax.swing.JFrame;
 
 public class RabbitApp extends JFrame {
 	
+	public static final int margin = 20;
+	public static final int FPS = 30;
+
 	public RabbitApp(String title) {
 		super(title);
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		this.setSize(1280, 720);
+		this.setSize(800, 600);
 
 		RabbitPanel panel = new RabbitPanel(this.getSize());
 		this.add(panel);

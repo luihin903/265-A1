@@ -33,7 +33,7 @@ public class Rabbit extends Object {
         vel.mult(speed);
 
         pos.add(vel);
-        System.out.println(Arrays.toString(carrots));
+        // System.out.println(Arrays.toString(carrots));
     }
 
     private void seek(Carrot[] carrots) {

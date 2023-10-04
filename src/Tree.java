@@ -25,10 +25,7 @@ public class Tree extends Object {
     }
 
     public Tree(Dimension s) {
-        super();
-        
-        pos = Util.random(s);
-        dim = default_dim;
+        super(s, default_dim);
     }
 
     public static void drawAll(Graphics2D g2) {

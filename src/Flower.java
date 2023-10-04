@@ -22,9 +22,7 @@ public class Flower extends Object {
     }
 
     private Flower(Dimension s) {
-        super(s);
-        pos = Util.random(s);
-        dim = default_dim;
+        super(s, default_dim);
         color = Util.random();
     }
 

@@ -7,22 +7,25 @@ import processing.core.PVector;
 
 public class Object {
     
-    protected PVector pos, dim, default_dim;
-    private final int margin = 20;
+    protected PVector pos, dim;
 
     public Object(PVector pos, PVector dim) {
         this.pos = pos;
         this.dim = dim;
     }
 
-    public Object() {};
+    public Object() {}
 
     public Object(Dimension s) {
-        pos = Util.random(s, margin, dim);
-        dim = default_dim;
-    };
+        pos = Util.random(s);
+    }
 
-    protected void draw(Graphics2D g2) {};
+    public Object(Dimension s, PVector default_dim) {
+        dim = default_dim;
+        pos = Util.random(s, dim);
+    }
+
+    protected void draw(Graphics2D g2) {}
 
     public void drawBoundingBox(Graphics2D g2) {
         AffineTransform af = g2.getTransform();
