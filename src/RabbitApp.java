@@ -1,5 +1,7 @@
 import javax.swing.JFrame;
 
+import processing.core.PVector;
+
 public class RabbitApp extends JFrame {
 	
 	public static final int margin = 20;

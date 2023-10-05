@@ -35,7 +35,7 @@ public class Flower extends Object {
     @Override
     public void draw(Graphics2D g2) {
 
-        drawBoundingBox(g2);
+        // drawBoundingBox(g2);
 
         AffineTransform af = g2.getTransform();
         g2.translate(pos.x, pos.y);

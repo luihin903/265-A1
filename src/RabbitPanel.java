@@ -20,11 +20,8 @@ public class RabbitPanel extends JPanel implements ActionListener {
         super();
 
         size = initialSize;
-        // System.out.println(initialSize.width);
-        // System.out.println(size.width);
-        // System.out.println("\n\n\n");
 
-        rabbit = new Rabbit(new PVector(size.width/2, size.height/2), new PVector(100, 100), 1);
+        rabbit = new Rabbit(new PVector(size.width/2, size.height/2), new PVector(50, 100), 2);
         Carrot.init(5, initialSize);
         Tree.init(5, initialSize);
         Flower.init(5, initialSize);
@@ -46,6 +43,7 @@ public class RabbitPanel extends JPanel implements ActionListener {
         Carrot.drawAll(g2);
         Flower.drawAll(g2);
         rabbit.draw(g2);
+
         // g2.drawOval(0, 0, 100, 100);
         // g2.drawOval(size.width-20-100, size.height-20-100, 100, 100);
         // for (int i = 0; i < 20; i ++) {
@@ -57,7 +55,9 @@ public class RabbitPanel extends JPanel implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        // rabbit.move(Carrot.get());
+        rabbit.move(Carrot.get(), getSize());
+        rabbit.eat(Carrot.get());
+        Carrot.count(getSize());
 
         repaint();
     }

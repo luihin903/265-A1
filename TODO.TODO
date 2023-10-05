@@ -11,8 +11,10 @@
               "content": "draw",
               "id": 1696146454924,
               "level": "default",
-              "done": false,
-              "start": 1696146454924
+              "done": true,
+              "start": 1696146454924,
+              "focus": false,
+              "end": 1696487337801
             }
           },
           {
@@ -22,8 +24,10 @@
               "content": "eat",
               "id": 1696146469668,
               "level": "default",
-              "done": false,
-              "start": 1696146469668
+              "done": true,
+              "start": 1696146469668,
+              "focus": false,
+              "end": 1696487338211
             }
           },
           {
@@ -57,8 +61,10 @@
           "content": "rabbit",
           "id": 1696146437533,
           "level": "default",
-          "done": false,
-          "start": 1696146437533
+          "done": true,
+          "start": 1696146437533,
+          "focus": false,
+          "end": 1696487338953
         }
       },
       {
@@ -84,8 +90,10 @@
               "content": "timer",
               "id": 1696146496979,
               "level": "default",
-              "done": false,
-              "start": 1696146496979
+              "done": true,
+              "start": 1696146496979,
+              "focus": false,
+              "end": 1696487340705
             }
           }
         ],
@@ -93,8 +101,10 @@
           "content": "carrot",
           "id": 1696146450274,
           "level": "default",
-          "done": false,
-          "start": 1696146450274
+          "done": true,
+          "start": 1696146450274,
+          "focus": false,
+          "end": 1696487341171
         }
       },
       {
@@ -197,6 +207,6 @@
     "showEndTime": false,
     "simpleMode": false,
     "lang": "en",
-    "version": "1696223943844"
+    "version": "1696487341344"
   }
 }
